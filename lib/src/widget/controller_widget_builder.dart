@@ -273,7 +273,7 @@ class DefaultIJKControllerWidgetState extends State<DefaultIJKControllerWidget>
       color: Colors.white,
       fontWeight: FontWeight.normal,
     );
-    var mergedTextStyle = theme.body2.merge(style);
+    var mergedTextStyle = theme.bodyText2.merge(style);
     return Container(
       decoration: BoxDecoration(
         color: Colors.black.withOpacity(0.5),
@@ -341,7 +341,7 @@ class DefaultIJKControllerWidgetState extends State<DefaultIJKControllerWidget>
     var videoInfo = await controller.getVideoInfo();
     _calculator = _ProgressCalculator(details, videoInfo);
     final rotateBoxProvider = _RotateBoxProvider.of(context);
-    if(rotateBoxProvider != null && rotateBoxProvider.quarterTurns == 1){
+    if (rotateBoxProvider != null && rotateBoxProvider.quarterTurns == 1) {
       _calculator.replaceXToY = true;
     }
   }
